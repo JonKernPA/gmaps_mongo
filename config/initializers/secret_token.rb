@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-GmapsMongo::Application.config.secret_key_base = '6410347846d3fc24d03967fbb70ae46e0bc0826c0c45c9ccdaac59e389b3c6b2a0ddccd48a85ff90838d590a0992bca6b81c64c469a09f8d70a0599e64cb0770'
+GmapsMongo::Application.config.secret_key_base = 'd46550cb88cab0e70a33f68e93bf1c866a4f26c2b5ca37d36e319e39190e14b7df3b7dfa90c7e7d4e9f2a5ca13d9d16c699818bf93ac62dad8af5deb5ad2d6b5'
