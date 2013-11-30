@@ -342,7 +342,7 @@ Put the following at the top of the `users/index.html.erb` page
 Visit [http://underscorejs.org/underscore-min.js](http://underscorejs.org/underscore-min.js).
 Select Production Version, copy all text or do right-click, Save As...
 
-Add this file under vendors as follows:
+Add this file under `vendor` as follows:
 
 ```ruby
 vendor/assets/javascripts/underscore.js
@@ -426,9 +426,9 @@ Be sure to add a couple of User records with addresses (and verify the geocoding
 
 Refresh the users page.
 
-Now you should see a map with your user data points...
+Now you should see a map with your user datapoints...
 
-If you do not see the individual user data points, then something is wrong.
+If you do not see the individual user datapoints, then something is wrong.
 
 ## Rails Composer
 
@@ -450,7 +450,7 @@ Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.
 
 ## Database
 
-This application uses MongoDB with the MongoMapper ORM.
+This application uses MongoDB with the MongoMapper ORM (above, we change out mongoid for mongo_mapper).
 
 ## Development
 
