@@ -225,7 +225,7 @@ In Gemfile, add:
 gem 'geocoder'
 ```
 
-In `routes.rb`
+In `routes.rb` add `root 'users#index'`
 
 ```ruby
 Gmaps::Application.routes.draw do
