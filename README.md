@@ -100,19 +100,19 @@ Improve error reporting with 'better_errors' during development? (y/n) y
 Okay to drop all existing databases named gmaps_mongo? 'No' will abort immediately! (y/n) y
 ```
 
-Gemfile, add
+Gemfile, add `mongo_mapper`
 
 ```ruby
 gem 'mongo_mapper', :git => "git://github.com/mongomapper/mongomapper.git", :tag => "v0.13.0.beta2"
 ```
 
-And delete the mongoid-rspec gem
+And delete the `mongoid-rspec` gem
 
 ```ruby
 gem 'mongoid-rspec', '>= 1.6.0', :github=>"evansagge/mongoid-rspec"
 ```
 
-In application.rb, add g.orm :mongo_mapper
+In application.rb, add `g.orm :mongo_mapper`
 
 ```ruby
 config.generators do |g|
@@ -124,9 +124,9 @@ config.generators do |g|
 end
 ```
 
-Delete config/mongoid.yml
+Delete `config/mongoid.yml`
 
-Add config/mongodb.yml
+Add `config/mongodb.yml`
 
 ```ruby
 defaults: &defaults
@@ -158,9 +158,9 @@ production:
   host: localhost
 ```
 
-Add to config/initializers
+Add to `config/initializers`
 
-mongodb.rb
+Create `mongodb.rb`
 
 ```ruby
 # Set up database name, appending the environment name (e.g., tml-development, tml-production)
@@ -179,7 +179,7 @@ end
 MongoMapper.database = "#{name}"
 ```
 
-mongomapper.rb
+Create `mongomapper.rb`
 
 ```ruby
 require 'mongo_mapper'
@@ -225,7 +225,7 @@ In Gemfile, add:
 gem 'geocoder'
 ```
 
-In routes.rb
+In `routes.rb`
 
 ```ruby
 Gmaps::Application.routes.draw do
@@ -234,7 +234,7 @@ Gmaps::Application.routes.draw do
 end
 ```
 
-Modify model/user.rb -- with MongoMapper and MongoDB, we need to do more than if we were using ActiveRecord...
+Modify `model/user.rb` -- with MongoMapper and MongoDB, we need to do more than if we were using ActiveRecord...
 
 * Add the Geocoder bits
 * Create a 2D array for the coordinates
@@ -318,7 +318,7 @@ rails s
 
 ### Add Map Div
 
-Inside users/index.html.erb
+Inside `users/index.html.erb`
 
 Add at the bottom of page:
 
@@ -330,7 +330,7 @@ Add at the bottom of page:
 
 ### Add Map Javascript
 
-Put the following at the top of the users/index.html.erb page
+Put the following at the top of the `users/index.html.erb` page
 
 ```
 <script src="//maps.google.com/maps/api/js?v=3.13&sensor=false&libraries=geometry" type="text/javascript"></script>
@@ -339,7 +339,7 @@ Put the following at the top of the users/index.html.erb page
 
 ### Underscores.js
 
-Visit http://underscorejs.org/underscore-min.js
+Visit [http://underscorejs.org/underscore-min.js](http://underscorejs.org/underscore-min.js).
 Select Production Version, copy all text or do right-click, Save As...
 
 Add this file under vendors as follows:
@@ -350,7 +350,7 @@ vendor/assets/javascripts/underscore.js
 
 ### Asset Pipeline
 
-Add underscore and gmaps to app/assets/javascripts/application.js
+Add underscore and gmaps to `app/assets/javascripts/application.js`
 
 ```ruby
 //= require jquery
@@ -361,7 +361,7 @@ Add underscore and gmaps to app/assets/javascripts/application.js
 //= require_tree .
 ```
 
-(leaving require_tree as last line)
+(leaving `require_tree .` as last line)
 
 ### Map Generation Script
 
