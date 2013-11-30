@@ -301,7 +301,7 @@ rails s
 
 In the App, create a new user, add an address (for example, "New York, NY" -- do not enter a lat or lon), save new user.
 
-You should see lat/lon geocoded...
+*Assert:* You should see lat/lon geocoded...
 
 ### Add Gmaps4Rails
 
@@ -400,7 +400,7 @@ If you don't see a map, something is wrong.
 
 ### Generate Map Datapoints
 
-Add to the controller the generation of the mapping data points from the user records:
+Add to the controller the generation of the mapping datapoints from the user records:
 
 ```ruby
   def index
