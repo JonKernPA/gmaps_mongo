@@ -36,7 +36,7 @@ Using /Users/jon/.rvm/gems/ruby-2.0.0-p247 with gemset gmaps_mongo
 $ gem install rails
 ```
 
-use the -T flag to skip Test::Unit files or the -O flag to skip Active Record files:
+use the `-T` flag to skip Test::Unit files or the `-O` flag to skip Active Record files:
 
 ```
 rails new . -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb -T -O
