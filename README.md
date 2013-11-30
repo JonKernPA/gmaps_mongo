@@ -1,8 +1,9 @@
-## Google Maps for Rails 4 and MongoDB Example App
+## GMaps4Rails, MongoDB, Zurb Example App
 
 ## Related GMaps4Rails Projects
 * [gmaps](https://github.com/JonKernPA/gmaps): Standard Rails4, ActiveRecord, standard UI
 * [gmaps_mongo](https://github.com/JonKernPA/gmaps_mongo): Rails4, MongoDB, standard UI
+* [gmaps_zurb](https://github.com/JonKernPA/gmaps_zurb): Rails4, MongoDB, Zurb Foundation
 
 ## Tech Stack
 
@@ -90,7 +91,6 @@ Use a form builder gem?
 Install a starter app?
 	1)  None
 
-Use application.yml file for environment variables? (y/n) y
 Set a robots.txt file to ban spiders? (y/n) y
 Create a GitHub repository? (y/n) y
 Use application.yml file for environment variables? (y/n) y
@@ -483,4 +483,4 @@ All the great gem, rvm, and rails authors
 
 ## License
 
-Free to a good home
+MIT License
