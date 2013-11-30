@@ -106,9 +106,10 @@ Gemfile, add `mongo_mapper`
 gem 'mongo_mapper', :git => "git://github.com/mongomapper/mongomapper.git", :tag => "v0.13.0.beta2"
 ```
 
-And delete the `mongoid-rspec` gem
+And delete the `mongoid` and `mongoid-rspec` gems
 
 ```ruby
+gem 'mongoid', '~> 4', :github=>"mongoid/mongoid"
 gem 'mongoid-rspec', '>= 1.6.0', :github=>"evansagge/mongoid-rspec"
 ```
 
@@ -208,13 +209,18 @@ end
 puts "Initialized: #{MongoMapper.database.name}"
 ```
 
+Do the usual
+
+```
+bundle install
+```
+
 ### Create User Model
 
 The user will have lat/lon data
 
 ```
 rails g scaffold User latitude:float longitude:float address:string description:string title:string
-rake db:migrate
 ```
 
 ### Add Address Geocoding
