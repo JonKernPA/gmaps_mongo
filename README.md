@@ -1,5 +1,11 @@
 ## Google Maps for Rails 4 and MongoDB Example App
 
+## Related GMaps4Rails Projects
+* [gmaps](https://github.com/JonKernPA/gmaps): Standard Rails4, ActiveRecord, standard UI
+* [gmaps_mongo](https://github.com/JonKernPA/gmaps_mongo): Rails4, MongoDB, standard UI
+
+## Tech Stack
+
 This application requires:
 
 * Ruby version 2.0.0
