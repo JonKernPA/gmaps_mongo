@@ -169,7 +169,7 @@ MongoMapper.config = {
     Rails.env => { 'uri' => ENV['MONGOHQ_URL'] ||
         'mongodb://localhost/sushi' } }
 MongoMapper.connect(Rails.env)
-name = "bz-#{Rails.env}"
+name = "gmaps-#{Rails.env}"
 if ENV['MONGOHQ_URL']
   uri = URI.parse(ENV['MONGOHQ_URL'])
   name = uri.path.gsub(/^\//, '')
