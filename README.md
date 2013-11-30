@@ -1,45 +1,12 @@
-# Gmaps Mongo
-
-This application was generated with the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem provided by the "RailsApps Project":http://railsapps.github.io/.
-
-## Diagnostics
-
-This application was built with recipes that are known to work together.
-
-Recipes:
-["apps4", "controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "saas", "setup", "testing", "views"]
-
-Preferences:
-{:git=>true, :apps4=>"none", :dev_webserver=>"thin", :prod_webserver=>"thin", :database=>"mongodb", :orm=>"mongoid", :templates=>"erb", :unit_test=>"rspec", :integration=>"cucumber", :continuous_testing=>"none", :fixtures=>"factory_girl", :frontend=>"none", :email=>"none", :authentication=>"none", :authorization=>"none", :form_builder=>"none", :starter_app=>"none", :quiet_assets=>true, :local_env_file=>true, :better_errors=>true, :ban_spiders=>true, :github=>true}
-
-## Ruby on Rails
+## Google Maps for Rails 4 and MongoDB Example App
 
 This application requires:
 
 * Ruby version 2.0.0
 * Rails version 4.0.1
-
-Learn more about "Installing Rails":http://railsapps.github.io/installing-rails.html.
-
-## Database
-
-This application uses MongoDB with the Mongoid ORM.
-
-## Development
-
-* Template Engine: ERB
-* Testing Framework: RSpec and Factory Girl and Cucumber
-* Front-end Framework: None
-* Form Builder: None
-* Authentication: None
-* Authorization: None
-
-## Google Maps for Rails Example App
-
-* Ruby 2.0
-* Rails 4.0
-* ActiveRecord
-* Plain Vanilla
+* [MongoDB](http://www.mongodb.org/)
+* [MongoMapper](https://github.com/mongomapper/mongomapper)
+* "Plain Vanilla" UI
 * [gmaps4rails](https://github.com/apneadiving/Google-Maps-for-Rails)
 
 ## Companion Video
@@ -456,6 +423,37 @@ Refresh the users page.
 Now you should see a map with your user data points...
 
 If you do not see the individual user data points, then something is wrong.
+
+## Rails Composer
+
+This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem provided by the [RailsApps Project](http://railsapps.github.io/).
+
+## Diagnostics
+
+This application was built with recipes that are known to work together.
+
+Recipes:
+["apps4", "controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "saas", "setup", "testing", "views"]
+
+Preferences:
+{:git=>true, :apps4=>"none", :dev_webserver=>"thin", :prod_webserver=>"thin", :database=>"mongodb", :orm=>"mongoid", :templates=>"erb", :unit_test=>"rspec", :integration=>"cucumber", :continuous_testing=>"none", :fixtures=>"factory_girl", :frontend=>"none", :email=>"none", :authentication=>"none", :authorization=>"none", :form_builder=>"none", :starter_app=>"none", :quiet_assets=>true, :local_env_file=>true, :better_errors=>true, :ban_spiders=>true, :github=>true}
+
+## Ruby on Rails
+
+Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
+
+## Database
+
+This application uses MongoDB with the MongoMapper ORM.
+
+## Development
+
+* Template Engine: ERB
+* Testing Framework: RSpec and Factory Girl and Cucumber
+* Front-end Framework: None
+* Form Builder: None
+* Authentication: None
+* Authorization: None
 
 
 ## Contributing
