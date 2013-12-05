@@ -1,4 +1,4 @@
-## GMaps4Rails, MongoDB, Zurb Example App
+## GMaps4Rails, MongoDB, Plain UI Example App
 
 ## Related GMaps4Rails Projects
 * [gmaps](https://github.com/JonKernPA/gmaps): Standard Rails4, ActiveRecord, standard UI
